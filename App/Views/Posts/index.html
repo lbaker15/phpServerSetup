@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Posts{% endblock %}
+
+{% block body %}
+
+    <h1 style="font-family: manrope">Posts</h1>
+
+    <ul>
+        {% for post in posts %}
+            <h2 style="font-family: manrope">{{ post.title }}</h2>
+            <p style="font-family: manrope">{{ post.content }}</p>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
